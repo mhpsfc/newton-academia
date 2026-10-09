@@ -44,7 +44,7 @@
       <a href="#jmedu">Math by JM EDU</a>
       <a href="#contact">오시는 길</a>
     </nav>
-    <a class="btn btn--sm btn--green header__cta" data-tel="phoneMain" href="tel:031-8002-5274">상담 문의</a>
+    <span class="btn btn--sm btn--green btn--static header__cta">상담 <span data-site="phoneMain">031-8002-5274</span></span>
     <button class="menu-btn" id="menuBtn" aria-label="메뉴 열기" aria-expanded="false" aria-controls="nav">
       <span></span><span></span><span></span>
     </button>
@@ -458,15 +458,13 @@
       <h2>상담 문의 · 오시는 길</h2>
       <p>학생의 학년, 재학 중인 학교, 준비하는 시험을 말씀해 주시면<br class="br-pc">맞는 수업과 일정을 안내해 드립니다.</p>
       <dl class="info">
-        <div><dt>학원 전화</dt><dd><a data-tel="phoneMain" href="tel:031-8002-5274" data-site="phoneMain">031-8002-5274</a></dd></div>
-        <div><dt>상담 휴대폰</dt><dd><a data-tel="phoneMobile" href="tel:010-5671-0644" data-site="phoneMobile">010-5671-0644</a></dd></div>
+        <div><dt>학원 전화</dt><dd><span class="info__tel" data-site="phoneMain">031-8002-5274</span></dd></div>
+        <div><dt>상담 휴대폰</dt><dd><span class="info__tel" data-site="phoneMobile">010-5671-0644</span></dd></div>
         <div data-show="hours"><dt>상담 시간</dt><dd data-site="hours"></dd></div>
         <div data-show="email"><dt>이메일</dt><dd><a data-mail="email" data-site="email" href="#"></a></dd></div>
         <div><dt>주소</dt><dd><span data-site="address">경기도 용인시 수지구 수지로 475, 4층</span><br><small data-site="addressNote"></small></dd></div>
       </dl>
       <div class="contact__btns">
-        <a class="btn btn--green" data-tel="phoneMain" href="tel:031-8002-5274">전화 걸기</a>
-        <a class="btn btn--outline" data-sms="phoneMobile" href="sms:010-5671-0644">문자 문의</a>
         <a class="btn btn--outline" data-href="kakaoChannel" data-show="kakaoChannel" href="#" target="_blank" rel="noopener">카카오톡 상담</a>
       </div>
       <div class="map-links">
@@ -499,8 +497,7 @@
 
 <!-- 모바일 하단 고정 상담 바 -->
 <div class="callbar">
-  <a data-tel="phoneMain" href="tel:031-8002-5274">전화 상담</a>
-  <a data-sms="phoneMobile" href="sms:010-5671-0644">문자 문의</a>
+  <span class="callbar__tel">상담 <b data-site="phoneMain">031-8002-5274</b></span>
   <a href="#season">시즌 일정</a>
 </div>
 

@@ -259,7 +259,7 @@ h2 { font-size: clamp(28px, 3.4vw, 40px); font-weight: 800; }
 .info div { display: grid; grid-template-columns: 110px 1fr; padding: 14px 0; border-top: 1px solid var(--line); }
 .info dt { color: var(--ink-3); font-weight: 600; }
 .info dd { margin: 0; font-weight: 600; }
-.info dd a { text-decoration: none; color: var(--navy); font-size: 18px; font-weight: 800; }
+.info dd a, .info__tel { text-decoration: none; color: var(--navy); font-size: 18px; font-weight: 800; }
 .info small { color: var(--ink-3); font-weight: 500; }
 .contact__btns { display: flex; flex-wrap: wrap; gap: 10px; }
 .map-links { margin-top: 18px; display: flex; gap: 16px; font-size: 14px; }
@@ -339,9 +339,9 @@ h2 { font-size: clamp(28px, 3.4vw, 40px); font-weight: 800; }
   .gallery { grid-template-columns: 1fr 1fr; grid-auto-rows: 150px; }
   .info div { grid-template-columns: 92px 1fr; }
   .footer { padding-bottom: 96px; }
-  .callbar { display: grid; grid-template-columns: repeat(3, 1fr); position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+  .callbar { display: grid; grid-template-columns: 2fr 1fr; position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
     background: var(--navy); box-shadow: 0 -4px 16px rgba(0,0,0,.15); padding-bottom: env(safe-area-inset-bottom); }
-  .callbar a { color: #fff; text-decoration: none; text-align: center; padding: 15px 0; font-weight: 700; font-size: 15px; }
-  .callbar a:first-child { background: var(--green); }
-  .callbar a + a { border-left: 1px solid rgba(255,255,255,.15); }
+  .callbar a, .callbar__tel { color: #fff; text-decoration: none; text-align: center; padding: 15px 0; font-weight: 700; font-size: 15px; }
+  .callbar__tel { background: var(--green); }
+  .callbar a { border-left: 1px solid rgba(255,255,255,.15); }
 }

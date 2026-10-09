@@ -54,6 +54,8 @@ p { margin: 0; }
 .btn--lg { padding: 15px 28px; font-size: 16px; }
 .btn--green { background: var(--green); color: #fff; }
 .btn--green:hover { background: var(--green-dark); }
+.btn--static, .btn--static:hover { cursor: default; user-select: text; }
+.btn--green.btn--static:hover { background: var(--green); }
 .btn--ghost { color: #fff; border-color: rgba(255,255,255,.6); }
 .btn--ghost:hover { background: rgba(255,255,255,.12); }
 .btn--outline { border-color: var(--line); color: var(--navy); background: #fff; }
@@ -89,7 +91,9 @@ p { margin: 0; }
 .hero__lead { font-size: 18px; color: rgba(255,255,255,.88); max-width: 600px; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
 .hero__partner { margin-top: 36px; display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: rgba(255,255,255,.85);
-  background: rgba(255,255,255,.95); color: var(--ink-2); padding: 8px 16px; border-radius: 999px; font-weight: 600; }
+  background: rgba(255,255,255,.95); color: var(--ink-2); padding: 8px 16px; border-radius: 999px; font-weight: 600;
+  text-decoration: none; transition: .2s; }
+a.hero__partner:hover { background: #fff; box-shadow: 0 0 0 3px rgba(143,224,176,.6); }
 .eyebrow { font-size: 13px; font-weight: 700; letter-spacing: .14em; color: var(--green); text-transform: uppercase; }
 .eyebrow--light { color: #8fe0b0; }
 .eyebrow--jm { color: var(--jm); }

@@ -48,3 +48,6 @@ GitHub Pages (무료). 저장소에 push하면 1–2분 뒤 자동 반영.
 - 배포 방법: `git add -A; git commit -m "..."; git push` (gh 로그인 계정 mhpsfc, git은 `C:\Program Files\Git\cmd`)
 - 도메인을 사면: 저장소 Settings → Pages → Custom domain 등록 + `index.html`의 og:url / og:image 주소 변경
 - 2026-10-09 첫 배포
+- 2026-10-09 도메인 newtonacademia.com (가비아 구입) — GitHub Pages custom domain 등록, CNAME 파일은 GitHub가 자동 커밋
+  - 가비아 DNS: A @ → 185.199.108.153 / 109 / 110 / 111.153, CNAME www → mhpsfc.github.io.
+  - DNS 반영 후 저장소 Settings → Pages → "Enforce HTTPS" 켜기 (또는 `gh api -X PUT repos/mhpsfc/newton-academia/pages -F https_enforced=true`)

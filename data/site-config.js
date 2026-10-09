@@ -10,7 +10,7 @@ window.SITE = {
   email: "",
   address: "경기도 용인시 수지구 수지로 475, 4층",
   addressNote: "뉴튼어학원 · 제이엠에듀",
-  hours: "",                       // 예: "평일 14:00–22:00 · 토 10:00–18:00"
+  hours: "오전 10시 – 오후 8시",
   kakaoChannel: "",                // 예: "https://pf.kakao.com/_xxxx"
   naverBlog: "",
   instagram: "",

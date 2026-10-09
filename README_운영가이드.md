@@ -41,4 +41,8 @@ GitHub Pages (무료). 저장소에 push하면 1–2분 뒤 자동 반영.
 - 강사 사진: 포스터에서 잘라낸 저해상도 — 원본 사진을 받으면 `assets/img/teachers/` 교체
 
 ## 배포 기록
-- (아직 배포 전)
+- 사이트: https://mhpsfc.github.io/newton-academia/
+- 저장소: https://github.com/mhpsfc/newton-academia (공개, main 브랜치 루트 → GitHub Pages)
+- 배포 방법: `git add -A; git commit -m "..."; git push` (gh 로그인 계정 mhpsfc, git은 `C:\Program Files\Git\cmd`)
+- 도메인을 사면: 저장소 Settings → Pages → Custom domain 등록 + `index.html`의 og:url / og:image 주소 변경
+- 2026-10-09 첫 배포

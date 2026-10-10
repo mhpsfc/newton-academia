@@ -51,3 +51,7 @@ GitHub Pages (무료). 저장소에 push하면 1–2분 뒤 자동 반영.
 - 2026-10-09 도메인 newtonacademia.com (가비아 구입) — GitHub Pages custom domain 등록, CNAME 파일은 GitHub가 자동 커밋
   - 가비아 DNS: A @ → 185.199.108.153 / 109 / 110 / 111.153, CNAME www → mhpsfc.github.io.
   - DNS 반영 후 저장소 Settings → Pages → "Enforce HTTPS" 켜기 (또는 `gh api -X PUT repos/mhpsfc/newton-academia/pages -F https_enforced=true`)
+- 2026-10-10 HTTPS 적용 완료 (인증서 만료 2027-01-08, GitHub가 자동 갱신)
+  - 도메인을 DNS보다 먼저 등록해서 인증서 발급이 1시간 넘게 시작되지 않았음 → custom domain을 제거했다가 다시 등록하자 2분 만에 승인됨
+  - 이 과정에서 GitHub가 "Delete CNAME"과 "Create CNAME" 커밋을 자동으로 만듦 → push 전에 `git pull`
+  - http, www, mhpsfc.github.io 주소는 모두 https://newtonacademia.com/ 으로 자동 이동

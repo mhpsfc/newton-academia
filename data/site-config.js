@@ -17,6 +17,7 @@ window.SITE = {
   naverMap: "https://map.naver.com/p/search/%EB%89%B4%ED%8A%BC%EC%96%B4%ED%95%99%EC%9B%90%20%EC%88%98%EC%A7%80%EB%A1%9C%20475",
   kakaoMap: "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EC%9A%A9%EC%9D%B8%EC%8B%9C%20%EC%88%98%EC%A7%80%EA%B5%AC%20%EC%88%98%EC%A7%80%EB%A1%9C%20475",
   jmeduSite: "https://www.jmeducation.net",
+  futurePrepSite: "https://futureprep.kr/",       // 협력기관 퓨처프렙 (유학 입시 컨설팅)
   youtube: "https://www.youtube.com/@%EC%A0%9C%EC%9D%B4%EC%97%A0%EC%97%90%EB%93%80",   // @제이엠에듀
 
   // 하단(푸터) 사업자 정보

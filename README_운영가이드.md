@@ -24,6 +24,14 @@ newton_homepage/
 `data/site-config.js` 수정. 빈 문자열("")인 항목은 화면에 표시되지 않음
 (예: `kakaoChannel`, `hours`, `email`, `academyRegNumber`를 채우면 해당 버튼/줄이 나타남).
 
+## 수정 후 꼭 할 것 — 버전 번호 올리기
+`index.html`의 css/js 링크 끝에 `?v=20261010a` 같은 버전이 붙어 있다.
+CSS·JS·data 파일을 고치면 이 값을 새 날짜로 모두 바꿔야 방문자 브라우저가 예전 파일을 쓰지 않는다.
+
+## 협력기관 섹션
+- 제이엠에듀 (`#jmedu`): 수학 파트너 — 교재·인강
+- 퓨처프렙 (`#futureprep`, https://futureprep.kr/): 유학 입시 컨설팅 — IPRES 진단, 대학·조기유학·대학원 컨설팅 (2026-10-10 추가, 퓨처프렙 사이트 내용을 요약)
+
 ## 로컬 미리보기
 ```
 python -m http.server 5510 --directory D:\Claude_Code\newton_homepage

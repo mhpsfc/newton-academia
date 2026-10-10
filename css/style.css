@@ -93,7 +93,11 @@ p { margin: 0; }
 .hero h1 span { color: #8fe0b0; }
 .hero__lead { font-size: 18px; color: rgba(255,255,255,.88); max-width: 600px; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
-.hero__partner { margin-top: 36px; display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: rgba(255,255,255,.85);
+.hero__partners { margin-top: 36px; display: flex; flex-wrap: wrap; gap: 12px; }
+.hero__partner--fp .fp__word { font-size: 16px; color: #1b2a4a; letter-spacing: .03em; }
+.hero__partner--fp .fp__word b { color: #b8914a; }
+a.hero__partner--fp:hover { box-shadow: 0 0 0 3px rgba(230,200,138,.7); }
+.hero__partner { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: rgba(255,255,255,.85);
   background: rgba(255,255,255,.95); color: var(--ink-2); padding: 8px 16px; border-radius: 999px; font-weight: 600;
   text-decoration: none; transition: .2s; }
 a.hero__partner:hover { background: #fff; box-shadow: 0 0 0 3px rgba(143,224,176,.6); }

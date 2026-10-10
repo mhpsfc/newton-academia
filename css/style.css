@@ -78,6 +78,9 @@ p { margin: 0; }
 .nav { display: flex; gap: 22px; margin-left: auto; }
 .nav a { text-decoration: none; font-size: 15px; font-weight: 600; color: var(--ink-2); }
 .nav a:hover { color: var(--green); }
+.qnav { display: none; }
+.qnav a { text-decoration: none; font-size: 15px; font-weight: 600; color: var(--ink-2); white-space: nowrap; }
+.qnav a:hover { color: var(--green); }
 .menu-btn { display: none; background: none; border: 0; padding: 8px; cursor: pointer; margin-left: auto; }
 .menu-btn span { display: block; width: 22px; height: 2px; background: var(--navy); margin: 5px 0; transition: .2s; }
 
@@ -327,8 +330,9 @@ h2 { font-size: clamp(28px, 3.4vw, 40px); font-weight: 800; }
 /* 메뉴가 9개라 1080px 이하에서는 햄버거 메뉴로 전환 */
 @media (max-width: 1080px) {
   :root { --header-h: 64px; }
-  .menu-btn { display: block; }
+  .menu-btn { display: block; margin-left: 12px; }
   .header__cta { display: none; }
+  .qnav { display: flex; gap: 22px; margin-left: auto; }
   .nav { position: fixed; top: var(--header-h); left: 0; right: 0; background: #fff; flex-direction: column; gap: 0;
     padding: 8px 24px 20px; border-bottom: 1px solid var(--line); box-shadow: var(--shadow);
     transform: translateY(-120%); transition: transform .25s; z-index: -1; }
@@ -354,6 +358,15 @@ h2 { font-size: clamp(28px, 3.4vw, 40px); font-weight: 800; }
 }
 @media (max-width: 640px) {
   .wrap { padding: 0 16px; }
+  /* 휴대폰: 바로가기를 로고 아래 두 번째 줄로 */
+  :root { --header-h: 104px; }
+  .header__inner { flex-wrap: wrap; align-content: stretch; row-gap: 0; }
+  .brand { height: 62px; }
+  .menu-btn { height: 62px; margin-left: auto; padding: 13px 8px; }  /* 세 줄 아이콘 간격 유지하며 세로 가운데 */
+  .brand img { width: 40px; height: 40px; }
+  .qnav { order: 3; width: 100%; height: 42px; margin: 0; gap: 0; justify-content: space-between; align-items: center;
+    border-top: 1px solid var(--line); }
+  .qnav a { font-size: 14px; }
   .br-pc { display: none; }
   .br-mo { display: inline; }
   .section { padding: 72px 0; }

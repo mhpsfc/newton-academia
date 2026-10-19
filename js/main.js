@@ -43,6 +43,15 @@
   if (y) y.textContent = new Date().getFullYear();
 
   /* ---------- 시즌 일정 ---------- */
+  var heroNotice = document.getElementById("heroNotice");
+  if (heroNotice && SEASON && SEASON.badge && SEASON.title) {
+    heroNotice.innerHTML = '<span class="hero__notice-tag">' + esc(SEASON.badge) + "</span>" +
+      "<b>" + esc(SEASON.title) + "</b>" +
+      (SEASON.period ? '<span class="hero__notice-period">' + esc(SEASON.period) + "</span>" : "") +
+      '<span class="hero__notice-go">포스터 보기 →</span>';
+    heroNotice.hidden = false;
+  }
+
   var body = document.getElementById("seasonBody");
   if (body && SEASON) {
     document.getElementById("seasonTitle").textContent = SEASON.title || "시즌 특강 · 학기 일정";
@@ -84,7 +93,7 @@
     h += "</div>";
 
     if (SEASON.poster) {
-      h += '<aside class="season__poster"><a href="' + esc(SEASON.poster) + '" target="_blank" rel="noopener">' +
+      h += '<aside class="season__poster"><a href="' + esc(SEASON.posterFull || SEASON.poster) + '" target="_blank" rel="noopener">' +
         '<img src="' + esc(SEASON.poster) + '" alt="' + esc(SEASON.title) + ' 안내 포스터" loading="lazy"></a>' +
         "<p>포스터를 누르면 크게 볼 수 있습니다</p></aside>";
     } else {

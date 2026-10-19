@@ -8,6 +8,7 @@
  *  posterFull: 포스터를 눌렀을 때 열리는 큰 이미지 (없으면 poster를 그대로 엶)
  *  notice    : 일정 아래 안내 문구 목록
  *  classes   : 반 목록 — name, teacher, target, schedule[{label, time}], points[]
+ *              (label 안에 \n을 넣으면 그 자리에서 줄바꿈)
  *  testDates : 함께 보여줄 시험 일정 (없으면 빈 목록 [])
  *
  *  지난 시즌(2026 가을학기) 내용은 git 기록에 남아 있습니다.
@@ -58,7 +59,7 @@ window.SEASON = {
         { label: "AP Economics", time: "Micro / Macro · 이준희 · 이가영 선생님" },
         { label: "AP Physics", time: "Physics 1 · Physics C: Mechanics · 김광희 · 양준영 선생님" },
         { label: "AP Computer Science", time: "월–토 상시 수강등록" },
-        { label: "AP Calculus · Statistics", time: "AB & BC · Statistics · 조셉박 선생님" }
+        { label: "AP Calculus\nAP Statistics", time: "AB & BC · Statistics · 조셉박 선생님" }
       ]
     },
     {

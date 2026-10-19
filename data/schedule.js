@@ -59,7 +59,7 @@ window.SEASON = {
         { label: "AP Economics", time: "Micro / Macro · 이준희 · 이가영 선생님" },
         { label: "AP Physics", time: "Physics 1 · Physics C: Mechanics · 김광희 · 양준영 선생님" },
         { label: "AP Computer Science", time: "월–토 상시 수강등록" },
-        { label: "AP Calculus\nAP Statistics", time: "AB & BC · Statistics · 조셉박 선생님" }
+        { label: "AP Calculus\nAP Statistics", time: "AB & BC · 조셉박 선생님" }
       ]
     },
     {
